@@ -10,9 +10,8 @@ Kanban::Application.routes.draw do |map|
       end
     end
   end
-
   
-  match '/' => 'pages#home'
+  root :to => 'projects#index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
